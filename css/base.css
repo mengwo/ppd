@@ -1,0 +1,143 @@
+body{
+    margin: auto 2em;
+}
+
+/* main container */
+.main-container{
+    display: grid;
+    grid-template: 1fr / 0.1fr 1fr;
+    grid-template-areas:
+    "aside main";
+    gap: 2em;
+    height: 100vh;
+    
+    
+}   
+
+/* side bar */
+aside{
+    background-color: #374F6B;
+    color: #ffff;
+    height: 90vh;
+    border-radius: 2em;
+    grid-area: aside;
+    margin: auto auto;
+    display: grid;
+    grid-template: auto / auto;
+    grid-template-areas:
+    "nav";
+    width: 8vw;
+}
+
+/* main content */
+/* main grid container */
+main{
+    grid-area: main;
+    height: 90vh;
+    margin: auto auto;
+    width: 100%;
+    border-radius: 2em;
+    display: grid;
+    grid-template: 0.3fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "body body";
+}
+/* side bar link */
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template: 0.1fr auto / auto;
+    grid-template-areas: 
+    "logo"
+    "navigation";
+}
+/* side bar logo */
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+/* link container */
+.navigation{
+    grid-area: navigation;
+    display: grid;
+    grid-template: auto / 100%;
+    grid-template-areas: 
+    "link";
+}
+/* grid name */
+ul{
+    grid-area: link;
+}
+
+/* main-header */
+.main-header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main-content */
+.main-content{
+    grid-area: body;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas:
+    "case summary";
+}
+.cases{
+    grid-area: case;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: auto;
+}
+.summary{
+    grid-area: summary;
+}
+
+.people-cases{
+    display: grid;
+    grid-template: auto auto / auto auto auto auto auto;
+    grid-template-areas: 
+    "p-image p-name p-time p-status p-act"
+    "p-image p-remarks p-time p-status p-act";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: fit-co;
+    place-items: center;
+}
+p{
+    margin: 0;
+}
+.people-image{
+    grid-area: p-image;
+}
+.people-names{
+    grid-area: p-name;
+    align-self: end;
+    justify-self: left;
+}
+.people-remarks{
+    grid-area: p-remarks;
+    align-self: start;
+    justify-self: left;
+}
+.people-timestamps{
+    grid-area: p-time;
+    display: flex;
+}
+.people-status{
+    grid-area: p-status;
+}
+.people-actions{
+    grid-area: p-act;
+}
+
+
+
+
+

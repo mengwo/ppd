@@ -1,0 +1,40 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    margin-top: 5em;
+}
+.icon-lg {
+    font-size: 48px;
+}
+.icon-white{
+    color: white;
+}
+.main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ppd-title{
+    align-self: flex-start;
+}
+.people-cases{
+    background-color: #374F6B;
+    height: 20%;
+    border-radius: 1em;
+    color: white;
+    
+}
+.people-image img{
+    border-radius: 1em;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
