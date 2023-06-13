@@ -1,3 +1,7 @@
+<?php
+    include './session/index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,24 +11,21 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Port Police Department</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Police Department</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./library/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <div class="main-container">
         <aside>
-            <?php
-            include './components/navigation/index.php';
-            ?>
+            <?php include '../ppd/components/dashboard/navigation/index.php'; ?>
         </aside>
-        <main>
-            <?php
-            include './components/main/index.php';
-            ?>
+        <main id="contentContainer">
         </main>
-    </div>
-    <script src="./library/js/bootstrap.min.js"></script>
+        <script src="./js/base.js"></script>
 </body>
 
 </html>

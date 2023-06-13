@@ -83,22 +83,41 @@ ul{
 /* main-content */
 .main-content{
     grid-area: body;
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
-    grid-template-areas:
-    "case summary";
 }
 .cases{
     grid-area: case;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    overflow-y: auto;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    grid-template-areas:
+    "grid-title grid-title"
+    "grid-cases grid-summary";
+    gap: 2em;
 }
 .summary{
     grid-area: summary;
 }
-
+.grid-title{
+    grid-area: grid-title;
+}
+.grid-cases{
+    grid-area: grid-cases;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.grid-summary{
+    grid-area: grid-summary;
+}
+.summary-container{
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1fr;
+    grid-template-areas: 
+    "total today"
+    "new new"
+    "new new"
+    "download download";
+    gap: 2em;
+}
 .people-cases{
     display: grid;
     grid-template: auto auto / auto auto auto auto auto;
@@ -107,9 +126,9 @@ ul{
     "p-image p-remarks p-time p-status p-act";
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: fit-co;
     place-items: center;
 }
+
 p{
     margin: 0;
 }
@@ -135,6 +154,30 @@ p{
 }
 .people-actions{
     grid-area: p-act;
+}
+.total{
+    grid-area: total;
+    background-color: #374F6B;
+    color: #ffff;
+    height: 10em;
+}
+.total-today{
+    grid-area: today;
+    background-color: #374F6B;
+    color: #ffff;
+    height: 10em;
+}
+.new-cases{
+    grid-area: new;
+    background-color: #374F6B;
+    color: #ffff;
+    height: 10em;
+}
+.download{
+    grid-area: download;
+    background-color: #374F6B;
+    color: #ffff;
+    height: 10em;
 }
 
 
