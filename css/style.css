@@ -1,35 +1,35 @@
 ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5em;
-    margin-top: 5em;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  margin-top: 5em;
 }
 
 .icon-lg {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .icon-white {
-    color: white;
+  color: white;
 }
 
 .main-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .ppd-title {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .people-cases {
-    background-color: #374F6B;
-    border-radius: 1em;
-    color: white;
+  background-color: #374F6B;
+  border-radius: 1em;
+  color: white;
 
 }
 
@@ -37,125 +37,233 @@ ul {
 .total-today,
 .new-cases,
 .download {
-    border-radius: 1em;
+  border-radius: 1em;
 }
 
 .total-number,
 .total-name {
-    font-weight: bold;
-    font-size: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .total,
 .total-today {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 3em 1em;
 }
 
 .new-cases {
-    display: grid;
-    grid-template: auto auto / 1fr 1fr;
-    grid-template-areas:
-        "case-title add-icon"
-        "case-button add-icon";
-    place-items: center;
-    padding: 1px 2em;
-}
-.download {
-    display: grid;
-    grid-template: auto auto / 1fr 1fr;
-    grid-template-areas:
-        "download-title download-icon"
-        "download-button download-icon";
-    place-items: center;
-    padding: 1px 2em;
-}
-.download-title, .download-button{
-    justify-self: start;
-}
-.download-title{
-    grid-area: download-title;
-}
-.download-button{
-    grid-area: download-button;
+  display: grid;
+  grid-template: auto auto / 1fr 1fr;
+  grid-template-areas:
+    "case-title add-icon"
+    "case-button add-icon";
+  place-items: center;
+  padding: 1px 2em;
 }
 
-.case-title, .case-button{
-    justify-self: start;
+.download {
+  display: grid;
+  grid-template: auto auto / 1fr 1fr;
+  grid-template-areas:
+    "download-title download-icon"
+    "download-button download-icon";
+  place-items: center;
+  padding: 1px 2em;
 }
+
+.download-title,
+.download-button {
+  justify-self: start;
+}
+
+.download-title {
+  grid-area: download-title;
+}
+
+.download-button {
+  grid-area: download-button;
+}
+
+.case-title,
+.case-button {
+  justify-self: start;
+}
+
 .case-title {
-    grid-area: case-title;
+  grid-area: case-title;
 }
 
 .case-button {
-    grid-area: case-button;
+  grid-area: case-button;
 }
 
 .total-name {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .people-image img {
-    border-radius: 1em;
-    height: 6em;
-    width: 7em;
-    padding: 10px;
+  border-radius: 1em;
+  height: 6em;
+  width: 7em;
+  padding: 10px;
 
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .add-icon {
-    grid-area: add-icon;
-    align-self: center;
+  grid-area: add-icon;
+  align-self: center;
 }
-.download-icon{
-    grid-area: download-icon;
-    align-self: center;
+
+.download-icon {
+  grid-area: download-icon;
+  align-self: center;
 }
+
 .add-icon,
 i {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 150px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
 }
 
 .active-link {
-    /* CSS styles for the active link */
-    background-color: #28282b;
-    font-weight: bold;
+  /* CSS styles for the active link */
+  background-color: #28282b;
+  font-weight: bold;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
   }
-  
-  @keyframes moveUpDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+
+  50% {
+    transform: translateY(-10px);
   }
-  
-  .btn-link.active-link {
-    animation: moveUpDown 1s;
+
+  100% {
+    transform: translateY(0);
   }
-  
-  
+}
+
+.btn-link.active-link {
+  animation: moveUpDown 1s;
+}
+
+.btn-container {
+  grid-area: btn;
+  justify-self: end;
+}
+
+.btn{
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: image;
+}
+
+/* Define styles for the image */
+.sample-image {
+  width: 400px;
+  height: 300px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+.rectangle-container {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: rectangle;
+}
+
+/* Define styles for the rectangle */
+.sample-rectangle {
+  width: 400px;
+  height: 200px;
+  background-color: #888;
+}
+
+.input-container {
+  grid-area: input;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+}
+.date{
+  background-color: #374F6B;
+  height: auto;
+  color: #fff;
+  border-radius: 1em;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.date h4{
+  padding: 0;
+  width: auto;
+  margin: 0;
+}
+
+.history-nav, .history-header, .history-content{
+  border-radius: 2em;
+}
+.history-nav{
+  background-color: #28282b;
+  color: white;
+  height: 10vh;
+}
+
+.history-header{
+  background-color: #374F6B;
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.history-date{
+  margin-left: 2em;
+}
+
+.history-content{
+  background-color: #D9D9D9;
+  color: black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.history-row{
+  display: flex;
+  gap: 1em;
+  margin-left: 2em;
+  margin-top: 2em;
+}

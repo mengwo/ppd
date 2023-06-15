@@ -20,7 +20,7 @@
             <h1>Add new case</h1>
         </div>
         <div class="case-button">
-            <button class="btn btn-dark" type="submit"> Add new </button>
+            <button onclick="openForm('add')" class="btn btn-dark" type="submit"> Add new </button>
         </div>
         <div class="add-icon">
             <i>person_add</i>
@@ -31,7 +31,7 @@
             <h1>Download all cases</h1>
         </div>
         <div class="download-button">
-            <button class="btn btn-dark" type="submit"> Download </button>
+            <button onclick="openForm('download')" class="btn btn-dark" type="submit"> Download </button>
         </div>
         <div class="download-icon">
             <i>cloud_download</i>

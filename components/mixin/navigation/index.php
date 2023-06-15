@@ -6,7 +6,7 @@
         <ul>
             <li><button id="dashboardBtn" class="btn btn-link" onclick="showContent('dashboard')" title="Dashboard"><i
                         class="material-icons icon-lg icon-white">dashboard</i></button></li>
-            <li><button id="peopleBtn" class="btn btn-link" onclick="showContent('people')" title="List of People"><i
+            <li><button id="caseBtn" class="btn btn-link" onclick="showContent('case')" title="List of case"><i
                         class="material-icons icon-lg icon-white">people</i></button></li>
             <li><button id="archiveBtn" class="btn btn-link" onclick="showContent('archive')" title="Archives"><i
                         class="material-icons icon-lg icon-white">archive</i></button></li>

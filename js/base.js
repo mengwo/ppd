@@ -36,11 +36,6 @@ function handleClick(event) {
   // Add active class to the clicked link button
   event.currentTarget.classList.add('active-link');
 
-  // Remove the active class after the animation completes
-  setTimeout(() => {
-    event.currentTarget.classList.remove('active-link');
-  }, 1000); // Adjust the duration (in milliseconds) to match the animation duration in CSS
-
   // Save the ID of the active link in local storage
   const activeLinkId = event.currentTarget.id;
   localStorage.setItem(activeLinkIdKey, activeLinkId);

@@ -16,7 +16,7 @@
         <div class=circle></div>
     </div>
     <div class="people-actions">
-        <button class="btn btn-dark">View Profile</button>
+        <button onclick="openForm('view')" class="btn btn-dark">View Profile</button>
     </div>
 </div>
 <div class="people-cases">

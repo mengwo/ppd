@@ -1,1 +1,1 @@
-this is history
+<?php include 'C:\xampp\htdocs\ppd\components\history\index.php'; ?>
