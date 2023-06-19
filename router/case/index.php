@@ -4,6 +4,6 @@
 <script src="./library/table/jquery.dataTables.min.js"></script>
 <script src="./library/table/dataTables.bootstrap5.min.js"></script>
 <script src="./js/script.js"></script>
-<script src="./js/pend.js"></script>
+<script src="./js/cases/index.js"></script>
 
-<?php include 'C:\xampp\htdocs\ppd\components\case\index.php'; ?>
+<?php include 'C:\xampp\htdocs\ppd\components\case\main\index.php'; ?>

@@ -8,7 +8,7 @@
             <table class="table table-hover table-bordered" id="order_table">
                 <thead>
                     <tr>
-                        <th>Issued by</th>
+                        <th>Id</th>
                         <th>Name</th>
                         <th>Age</th>
                         <th>Address</th>

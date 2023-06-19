@@ -267,3 +267,6 @@ i {
   margin-left: 2em;
   margin-top: 2em;
 }
+.datepicker-container{
+  align-self: flex-start;
+}
