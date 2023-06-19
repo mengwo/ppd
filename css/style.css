@@ -269,4 +269,5 @@ i {
 }
 .datepicker-container{
   align-self: flex-start;
+  width: 12.5em;
 }

@@ -74,6 +74,7 @@ if (isset($_POST["action"]) && $_POST["action"] === 'fetch') {
         $sub_array[] = '<span class="dtype">' . $row["dtype"] . '</span>';
         $sub_array[] = '<span class="snd">' . $row["snd"] . '</span>';
         $sub_array[] = '<span class="sub">' . $row["sub"] . '</span>';
+        $sub_array[] = '<span class="req">' . $row["req"] . '</span>';
         $sub_array[] = '<td>
             <button onclick="opendupdate()" class="btn btn-secondary" id="myButton" name="upctrlno">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
